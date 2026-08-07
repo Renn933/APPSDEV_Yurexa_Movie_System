@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yurexa — Movies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+      <div class="nav__container">
+        <a href="#" class="nav__logo" data-nav="home">Yurexa</a>
+        <div class="nav__toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#" data-nav="home" class="nav__link active">Home</a></li>
+          <li><a href="#" data-nav="browse" class="nav__link">Browse</a></li>
+          <li><a href="#" data-nav="watchlist" class="nav__link">Watchlist <span class="nav__badge" id="watchlistBadge">0</span></a></li>
+          <li><a href="#" data-nav="cart" class="nav__link">Cart <span class="nav__badge" id="cartBadge">0</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main" id="mainContent">
+      <!-- Views rendered here by JS -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p>&copy; 2026 Yurexa. All rights reserved.</p>
+        <p class="footer__tagline">Your cinematic universe.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
